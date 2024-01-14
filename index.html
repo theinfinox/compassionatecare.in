@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compassionate Care</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section hgroup {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><strong>Compassionate Care</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#physical">Physical</a></li>
+            <li><a href="#psychological">Psychological</a></li>
+            <li><a href="#socioeconomic">Socioeconomic</a></li>
+            <li><a href="#spiritual">Spiritual</a></li>
+            <li><a href="#subscribe" role="button">Subscribe</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <section>
+                <hgroup>
+                    <h2>Welcome to Compassionate Care</h2>
+                    <h3>Your Resource for Palliative Care Education</h3>
+                </hgroup>
+                <p>Compassionate Care is dedicated to providing in-depth resources and information on palliative care, focusing on the four key dimensions of care: physical, psychological, socioeconomic, and spiritual. Our approach emphasizes compassion, empathy, competence, dignity, and respect in all aspects of care.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/random/800x600?medical" alt="Compassionate Care" />
+                    <figcaption>Source: Unsplash</figcaption>
+                </figure>
+            </section>
+            <section id="physical">
+                <hgroup>
+                    <h2>Physical Dimension of Palliative Care</h2>
+                    <h3>Addressing Physical Needs and Comfort</h3>
+                </hgroup>
+                <p>The physical dimension of palliative care focuses on relieving pain and other distressing symptoms, providing comfort and ensuring the highest quality of life for patients.</p>
+            </section>
+            <!-- Repeat the structure for other sections -->
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div>
+            <article>
+                <hgroup>
+                    <h2>Stay Updated</h2>
+                    <h3>Subscribe to Our Newsletter</h3>
+                </hgroup>
+                <form>
+                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#"> Terms of Use</a>
+        </small>
+    </footer>
+</body>
+</html>
