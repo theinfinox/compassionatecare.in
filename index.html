@@ -5,72 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Compassionate Care</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        main {
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 2rem;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        section hgroup {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        form {
-            display: grid;
-            gap: 1rem;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
-    <nav>
+    <nav class="container-fluid">
         <ul>
             <li><strong>Compassionate Care</strong></li>
         </ul>
@@ -83,8 +20,8 @@
             <li><a href="#subscribe" role="button">Subscribe</a></li>
         </ul>
     </nav>
-    <main>
-        <div>
+    <main class="container">
+        <div class="grid">
             <section>
                 <hgroup>
                     <h2>Welcome to Compassionate Care</h2>
@@ -103,28 +40,49 @@
                 </hgroup>
                 <p>The physical dimension of palliative care focuses on relieving pain and other distressing symptoms, providing comfort and ensuring the highest quality of life for patients.</p>
             </section>
-            <!-- Repeat the structure for other sections -->
+            <section id="psychological">
+                <hgroup>
+                    <h2>Psychological Dimension of Palliative Care</h2>
+                    <h3>Supporting Mental and Emotional Well-being</h3>
+                </hgroup>
+                <p>The psychological aspect of palliative care involves supporting the mental and emotional well-being of patients, helping them to cope with illness and its impact on their lives.</p>
+            </section>
+            <section id="socioeconomic">
+                <hgroup>
+                    <h2>Socioeconomic Dimension of Palliative Care</h2>
+                    <h3>Understanding Social and Economic Challenges</h3>
+                </hgroup>
+                <p>Palliative care also encompasses the socioeconomic dimension, addressing the social and economic challenges faced by patients and their families, and providing necessary support and resources.</p>
+            </section>
+            <section id="spiritual">
+                <hgroup>
+                    <h2>Spiritual Dimension of Palliative Care</h2>
+                    <h3>Addressing Spiritual Needs and Concerns</h3>
+                </hgroup>
+                <p>The spiritual dimension of palliative care acknowledges and supports the spiritual or religious needs and concerns of patients, contributing to a holistic approach to care.</p>
+            </section>
         </div>
     </main>
     <section aria-label="Subscribe example">
-        <div>
+        <div class="container">
             <article>
                 <hgroup>
                     <h2>Stay Updated</h2>
                     <h3>Subscribe to Our Newsletter</h3>
                 </hgroup>
-                <form>
+                <form class="grid">
                     <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required />
                     <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
-                    <button type="submit">Subscribe</button>
+                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
                 </form>
             </article>
         </div>
     </section>
-    <footer>
+    <footer class="container">
         <small>
             <a href="#">Privacy Policy</a> • <a href="#"> Terms of Use</a>
-        </small>
-    </footer>
+</small>
+</footer>
+
 </body>
 </html>
